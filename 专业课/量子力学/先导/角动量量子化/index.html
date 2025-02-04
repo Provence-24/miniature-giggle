@@ -829,6 +829,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      角动量量子化
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="角动量量子化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      结论
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -929,6 +953,30 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       推导
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      角动量量子化
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="角动量量子化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      结论
     </span>
   </a>
   
@@ -1102,6 +1150,90 @@ E_{min}=\frac 1 2\hbar\omega
 <div class="arithmatex">\[
 从基态出发，根据\hat a^+的性质（每次增加\hbar\omega），可推出能量量子化
 \]</div>
+<h2 id="_4">角动量量子化<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<details class="思路">
+<summary>思路</summary>
+<p>1.找出角动量对应的运算子（两个）<br>
+2. 找出具有上升下降性质的共轭算子 <br>
+3. 将这两个算子与z轴角动量对应的算子联系起来 <br>
+4. 确定范围 并代入最小和最大的方程式</p>
+</details>
+<div class="arithmatex">\[
+\begin{align*}
+[J_x,J_y]&amp;=i\hbar J_z\\
+[J^2,J_z]&amp;=0
+\end{align*}
+\]</div>
+<details class="详细过程">
+<summary>详细过程</summary>
+<p>dd</p>
+</details>
+<div class="arithmatex">\[
+J_+=J_x+iJ_y\,\,\,\,\,\,\,\,J_-=J_x-iJ_y
+\]</div>
+<div class="arithmatex">\[
+关系\text{：}[J_z,J_+]=\hbar J_+\,,\,[J_z,J_-]=-\hbar J_-
+\]</div>
+<div class="arithmatex">\[
+J_+J_-=J^2-J_z^2+\hbar J_z\,,\,J_-J_+=J^2-J_z^2+\hbar J_z
+\]</div>
+<div class="arithmatex">\[
+\begin{align*}
+J|\lambda\,\,m\rangle&amp;=\lambda|\lambda\,\,m\rangle\\
+J_z|\lambda\,\,m\rangle&amp;=m\hbar |\lambda \,\,m\rangle
+\end{align*}\\
+\]</div>
+<blockquote>
+<p>下证<span class="arithmatex">\(\text{：}J_+\)</span>为上升算子</p>
+</blockquote>
+<div class="arithmatex">\[
+\begin{align*}
+J_zJ_+|\lambda\,\,m\rangle&amp;=J_+(J_z+\hbar)|\lambda \,\,m\rangle\\
+&amp;=(m+1)\hbar J_+|\lambda\,\,m\rangle
+\end{align*}
+\]</div>
+<div style="text-align: right;">
+证毕.
+</div>
+
+<div class="arithmatex">\[
+J^2=J_x^2+J_y^2+J_z^2 
+\]</div>
+<div class="arithmatex">\[
+\Rightarrow \lambda-{(m\hbar)}^2\geq0
+\]</div>
+<div class="arithmatex">\[
+\begin{align*}
+J_-|\lambda\,\,m_{min}\rangle&amp;=0\\
+J_+J_-|\lambda\,\,m_{min}\rangle&amp;=0\\
+\end{align*}
+\]</div>
+<div class="arithmatex">\[
+\begin{align*}
+\lambda-m_{min}(m_{min}-1)\hbar ^2&amp;=0\\
+同理\text{:}\,\lambda-m_{max}(m_{max}+1)\hbar ^2&amp;=0
+\end{align*}
+\]</div>
+<div class="arithmatex">\[
+\Rightarrow m_{max}=-m_{min}=j
+\]</div>
+<div class="arithmatex">\[
+\Rightarrow \lambda=j(j+1)\hbar ^2
+\]</div>
+<details class="含义">
+<summary>含义</summary>
+<p><span class="arithmatex">\(j(=0,1,2,\ldots,n-1)\)</span>确定角量子数，在此基础上确定磁量子数的范围<span class="arithmatex">\(，-j\leq m\leq j\)</span></p>
+</details>
+<h4 id="_5">结论<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+\boldsymbol{J^2 |j\,\,m\rangle=j(j+1)\hbar ^2|j\,\,m\rangle}
+\]</div>
+<p>$$
+\boldsymbol{J_z|j\,\,m\rangle=m\hbar|j\,\,m\rangle}
+$$
+说明：角动量量子化<br>
+1.总角动量量子化 只能取离散的值<span class="arithmatex">\(\,\sqrt{j(j+1)}\,\hbar.\)</span><br>
+2.<span class="arithmatex">\(z\)</span>角动量方向投影量子化，取值为<span class="arithmatex">\(\,m\hbar.\)</span></p>
 
 
 
@@ -1246,6 +1378,8 @@ E_{min}=\frac 1 2\hbar\omega
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/MathJax/3.2.2/es5/tex-mml-chtml.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
