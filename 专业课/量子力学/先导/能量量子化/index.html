@@ -1128,8 +1128,26 @@ V(x) =
 \]</div>
 <details>
 <summary>推导</summary>
-<p>d
-d</p>
+<div class="arithmatex">\[
+\hat{H}|\psi\rangle=E|\psi\rangle \\
+\]</div>
+<div class="arithmatex">\[
+-\frac{\hbar ^2}{2m}\frac{{\text d}^2|\psi\rangle}{{\text d}x^2}=E|\psi\rangle
+\tag{1}
+\]</div>
+<div class="arithmatex">\[
+代入x=0的边界条件{\text (}确定是 \sin {\text ):}\,
+|\psi\rangle=\sin kx\,,\,k=\frac{\sqrt{2mE}}{\hbar}
+\]</div>
+<div class="arithmatex">\[
+代入x=L的边界条件{\text :}\,kL=n\pi\,\Rightarrow\,k=\frac{n\pi}{L}
+\]</div>
+<div class="arithmatex">\[
+归一化后\, |\psi\rangle=\sqrt{\frac{2}{L}}\sin \frac{n\pi}{L}x
+\]</div>
+<div class="arithmatex">\[
+由{\text (}1{\text )}式\,能量E可由n表示{\text :}E=\frac{\hbar ^2k^2}{2m}=\frac{\hbar ^2\pi ^2}{2mL^2}\,n^2
+\]</div>
 </details>
 <h4 id="_2">结论<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <div class="arithmatex">\[
@@ -1150,14 +1168,52 @@ V(x) =
 \end{cases}
 \]</div>
 <details>
+<summary>hint1</summary>
+<p>能量大于势能，能量小于势能，分别的波函数形式为何</p>
+</details>
+<details>
+<summary>hint2</summary>
+<p>如何化简六个参数的分段波函数</p>
+</details>
+<details>
+<summary>hint3</summary>
+<p>化简有两步</p>
+</details>
+<details>
+<summary>hint4</summary>
+<p>在两种情况下 分别代入边界条件</p>
+</details>
+<details>
+<summary>hint5</summary>
+<p>边界条件只需要代入一侧的就可以了<br>
+（偶对称时显然，奇对称时猜测也成立,验证后确实成立）</p>
+</details>
+<details>
+<summary>hint6</summary>
+<p>变量代换</p>
+</details>
+<details>
+<summary>hint7</summary>
+<p><span class="arithmatex">\(\lambda\)</span> 对应<span class="arithmatex">\(V_0\,\,\)</span> <span class="arithmatex">\(z\)</span>对应<span class="arithmatex">\(|E|\)</span></p>
+</details>
+<details>
 <summary>推导</summary>
-<p>d
-d</p>
+<p><center> <a class="glightbox" href="../%E6%9C%89%E9%99%90%E6%B7%B1%E6%96%B9%E5%BD%A2%E9%98%B1%E7%9A%84%E5%8A%BF%E8%83%BD%E5%88%86%E5%B8%83.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="有限深方形阱的势能分布" src="../%E6%9C%89%E9%99%90%E6%B7%B1%E6%96%B9%E5%BD%A2%E9%98%B1%E7%9A%84%E5%8A%BF%E8%83%BD%E5%88%86%E5%B8%83.png" /></a> </center>
+<center> <a class="glightbox" href="../%E6%9C%89%E9%99%90%E6%B7%B1%E6%96%B9%E5%BD%A2%E9%98%B1%E6%8E%A8%E5%AF%BC1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="有限深方形阱推导1" src="../%E6%9C%89%E9%99%90%E6%B7%B1%E6%96%B9%E5%BD%A2%E9%98%B1%E6%8E%A8%E5%AF%BC1.png" /></a> </center>
+<center> <a class="glightbox" href="../%E6%9C%89%E9%99%90%E6%B7%B1%E6%96%B9%E5%BD%A2%E9%98%B1%E6%8E%A8%E5%AF%BC2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="有限深方形阱推导2" src="../%E6%9C%89%E9%99%90%E6%B7%B1%E6%96%B9%E5%BD%A2%E9%98%B1%E6%8E%A8%E5%AF%BC2.png" /></a> </center>
+<center> <a class="glightbox" href="../%E6%9C%89%E9%99%90%E6%B7%B1%E6%96%B9%E5%BD%A2%E9%98%B1%E6%8E%A8%E5%AF%BC3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="有限深方形阱推导3" src="../%E6%9C%89%E9%99%90%E6%B7%B1%E6%96%B9%E5%BD%A2%E9%98%B1%E6%8E%A8%E5%AF%BC3.png" /></a> </center></p>
+<div class="arithmatex">\[
+\begin{cases}
+B_1e^{\rho x}+B_2e^{-\rho x} &amp; x\leq-a \\
+A_1e^{ikx} +A_2e^{-ikx} &amp; -a &lt; x &lt; a \\
+B_1^{'}e^{\rho x}+B_2^{'}e^{-\rho x}&amp; x \geq a \\
+\end{cases}
+\]</div>
 </details>
 <details>
 <summary>aha moment</summary>
-<p>d
-d</p>
+<p>无限远的边界条件 可消去两项
+由对称结构 可进一步简化中间的波函数<span class="arithmatex">\(\sin\)</span>或<span class="arithmatex">\(\cos\)</span>形式</p>
 </details>
 <h4 id="_4">结论<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
 <div class="arithmatex">\[ 
@@ -1173,19 +1229,21 @@ d</p>
 <p>说明：根据方程组<span class="arithmatex">\(，y\)</span>和<span class="arithmatex">\(z\)</span>只能取离散的几个值<span class="arithmatex">\(，\)</span>并且<span class="arithmatex">\(z\)</span>通过<span class="arithmatex">\(\rho\)</span>对应该状态下的能量<span class="arithmatex">\(。\)</span>因此能量（束缚能）量子化<span class="arithmatex">\(。\)</span></p>
 <h4 id="_5">例题<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <h2 id="_6">位能障碍<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p><font color=red>研究重点：穿透率</font>
+<p><font color=red>研究重点：穿透率<span class="arithmatex">\(\,\,\)</span>波函数结构</font>
 <center> <a class="glightbox" href="../%E5%85%B1%E6%8C%AF%E5%8A%BF%E8%83%BD%E5%88%86%E5%B8%83.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="共振势能分布" src="../%E5%85%B1%E6%8C%AF%E5%8A%BF%E8%83%BD%E5%88%86%E5%B8%83.png" /></a> </center></p>
 <details>
 <summary>推导</summary>
-<p>d
-d</p>
+<p>暂无</p>
 </details>
 <details>
 <summary>aha moment</summary>
-<p>d
-d</p>
+<p>聚焦研究的对象：穿透率
+先用共振的情况求出一般解
+再代入<span class="arithmatex">\(\rho_2=ik_2\)</span> 类比出隧穿的解
+最后近似来简化</p>
 </details>
 <h4 id="_7">结论<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p><center> <a class="glightbox" href="../%E9%9A%A7%E7%A9%BF%E6%B3%A2%E5%87%BD%E6%95%B0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="隧穿波函数" src="../%E9%9A%A7%E7%A9%BF%E6%B3%A2%E5%87%BD%E6%95%B0.png" /></a> </center></p>
 <div class="arithmatex">\[
 T={|\frac{A_3}{A_1}|}^2=\frac{1}{1+\frac{1}{4}\frac{{V_0}^2}{E(V_0-E)}{\sinh}^2(\rho l)}
 \]</div>
@@ -1200,8 +1258,7 @@ V(x)=\frac 1 2kx^2=\frac 1 2m\omega ^2x^2
 \]</div>
 <details>
 <summary>推导</summary>
-<p>d
-d</p>
+<p>略显复杂www</p>
 </details>
 <details>
 <summary>启示</summary>
