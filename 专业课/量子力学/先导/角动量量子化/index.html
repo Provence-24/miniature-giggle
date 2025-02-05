@@ -848,6 +848,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      应用
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -982,6 +991,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      应用
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1009,8 +1027,8 @@
   <h1>角动量量子化</h1>
 
 <h2 id="_1">矩阵力学方法<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<details class="aha moment">
-<summary>Aha</summary>
+<details>
+<summary>aha moment</summary>
 <p>1.量子化条件是 <span class="arithmatex">\([\hat{x},\hat{P}]=i\hbar\)</span> <br>
 2.上升 下降算子</p>
 </details>
@@ -1168,7 +1186,51 @@ E_{min}=\frac 1 2\hbar\omega
 \]</div>
 <details class="详细过程">
 <summary>详细过程</summary>
-<p>dd</p>
+<div class="arithmatex">\[
+\boldsymbol{L}=\boldsymbol{r} \times \boldsymbol{P}=
+\left[
+\begin{matrix}
+\hat{i}&amp;\hat{j}&amp;\hat{k}\\
+r_x&amp;r_y&amp;r_z\\
+P_x&amp;P_y&amp;P_z
+\end{matrix}
+\right]
+\]</div>
+<div class="arithmatex">\[
+\Rightarrow \hat{L_x}=\hat{Y}\hat{P_z}-\hat{Z}\hat{P_y}\,\,\hat{L_y}=\hat{Z}\hat{P_x}-\hat{X}\hat{P_z}\,\,
+\hat{L_z}=\hat{X}\hat{P_y}-\hat{Y}\hat{P_x}
+\]</div>
+<div class="arithmatex">\[
+由\text{:}\,[\hat{x},\hat{P_x}]=i\hbar\,\,[\hat{y},\hat{P_y}]=i\hbar\,\,[\hat{z},\hat{P_z}]=i\hbar
+\]</div>
+<div class="arithmatex">\[
+\begin{align*}
+\Rightarrow[\hat{L_x},\hat{L_y}]&amp;=\hat L_x\hat L_y-\hat L_y\hat L_x \\
+&amp;=(\hat Y\hat P_z-\hat Z\hat P_y)(\hat Z\hat P_x-\hat X\hat P_z)-(\hat Z\hat P_x-\hat X\hat P_z)(\hat Y\hat P_z-\hat Z\hat P_y)\\
+&amp;=\hat P_z\hat Z\hat Y\hat P_x+\hat Z\hat P_z\hat P_y\hat X-\hat Z\hat P_z\hat P_x\hat Y-\hat P_z\hat Z\hat X\hat P_y+0\\
+&amp;=\hat P_z\hat Z(\hat Y\hat P_x-\hat X\hat P_y)-\hat Z\hat P_z(\hat Y\hat P_x-\hat X\hat P_y)\\
+&amp;=(\hat P_z\hat Z-\hat Z\hat P_z)(\hat Y\hat P_x-\hat X\hat P_y)\\
+&amp;=-i\hbar (-\hat L_z)\\
+&amp;=i\hbar \hat L_z
+\end{align*}
+\]</div>
+<div class="arithmatex">\[
+\boldsymbol{{\hat J}^2={\hat J_x}^2+{\hat J_y}^2+{\hat J_z}^2}
+\]</div>
+<div class="arithmatex">\[
+\begin{align*}
+\Rightarrow [{\hat J}^2,\hat J_x]&amp;=[{\hat J_y}^2,\hat J_x]+[{\hat J_z}^2,\hat J_x]\\
+&amp;=[\hat J_y,\hat J_x]\hat J_y+\hat J_y[\hat J_y,\hat J_x]+[\hat J_z,\hat J_x]\hat J_z+\hat J_z[\hat J_z,\hat J_x]\\
+&amp;=-i\hbar \hat J_z\hat J_y-i\hbar \hat J_y\hat J_z+i\hbar \hat J_y\hat J_z+i\hbar \hat J_z\hat J_y\\
+&amp;=0
+\end{align*}
+\]</div>
+<div class="arithmatex">\[
+同理\text{:}\,[{\hat J}^2,\hat J_z]=0
+\]</div>
+<div class="arithmatex">\[
+选定可同时测量的物理量\,{\hat J}^2和\hat J_z
+\]</div>
 </details>
 <div class="arithmatex">\[
 J_+=J_x+iJ_y\,\,\,\,\,\,\,\,J_-=J_x-iJ_y
@@ -1236,6 +1298,7 @@ $$
 说明：角动量量子化<br>
 1.总角动量量子化 只能取离散的值<span class="arithmatex">\(\,\sqrt{j(j+1)}\,\hbar.\)</span><br>
 2.<span class="arithmatex">\(z\)</span>角动量方向投影量子化，取值为<span class="arithmatex">\(\,m\hbar.\)</span></p>
+<h4 id="_6">应用<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 
 
 
