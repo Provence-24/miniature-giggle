@@ -425,6 +425,8 @@
       
         
       
+        
+      
     
     
       
@@ -896,6 +898,56 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/%E4%BB%8B%E7%BB%8D/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    量子计算
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1059,7 +1111,34 @@
 <li>状态的运动方程式 <br></li>
 </ul>
 <h4 id="_3">物理量对应的运算子推导<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
-<p><br></p>
+<p>以动量算符为例：</p>
+<details>
+<summary>启示</summary>
+<p>傅里叶变换<br>
+本题涉及的数学基础 物理基础不够扎实</p>
+</details>
+<details>
+<summary>三个引理</summary>
+<p>1.<span class="arithmatex">\(\langle p|\phi\rangle =\phi (p)\)</span><br>
+2.<span class="arithmatex">\(\langle x|p\rangle =\frac 1 {\sqrt{2\pi \hbar}}e^{i\frac{p}{\hbar}x}\)</span><br>
+3.<span class="arithmatex">\(\phi (x)=\frac 1 {\sqrt{2\pi \hbar}}\int_{-\infty}^{+\infty}\phi(p)e^{ipx/\hbar}\text{d}p\)</span></p>
+</details>
+<div class="arithmatex">\[
+\begin{align*}
+\hat{P}\phi(x)&amp;=\hat P\langle x|\phi\rangle\\
+&amp;={\hat P}^+\langle x|\phi\rangle\\
+&amp;=\langle x|{\hat P}^+|\phi \rangle\\
+&amp;=\langle x|{\hat P}|\phi \rangle\\
+&amp;\overset{插入基}=\int_{-\infty}^{+\infty}\langle x|\hat P|p\rangle \langle p|\phi \rangle \text{d}p\\
+&amp;\overset{引理1}=\int_{-\infty}^{+\infty}p\langle x|p\rangle \phi (p) \text{d}p\\
+&amp;\overset{引理2}=\frac 1{\sqrt{2\pi\hbar}}\int_{-\infty}^{+\infty}p\phi(p)e^{ipx/{\hbar}}\text{d}p\\
+&amp;=\frac{\hbar}{i}\frac{\text{d}}{\text{d}x}(\frac 1 {\sqrt{2\pi \hbar}}\int_{-\infty}^{+\infty}\phi(p)e^{ipx/\hbar}\text{d}p)\\
+&amp;\overset{引理3}=-i\hbar \frac{\text{d}}{\text{d}x}\phi (x)
+\end{align*}
+\]</div>
+<div class="arithmatex">\[
+\Rightarrow \boldsymbol{\hat{P}=-i\hbar\frac{\rm{d}}{\rm{d}x}}
+\]</div>
 <h2 id="1">例题1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <p>若质量为<span class="arithmatex">\(\,m\,\)</span>的质点<span class="arithmatex">\(，\)</span>自由运动在长度为<span class="arithmatex">\(\,L\,\)</span>的范围内<span class="arithmatex">\(。\)</span>在<span class="arithmatex">\(\,t=0\,\)</span>时<span class="arithmatex">\(，\)</span>状态由</p>
 <div class="arithmatex">\[
