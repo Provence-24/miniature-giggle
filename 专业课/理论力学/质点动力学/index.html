@@ -503,6 +503,8 @@
       
         
       
+        
+      
     
     
       
@@ -735,6 +737,48 @@
   <a href="#tv" class="md-nav__link">
     <span class="md-ellipsis">
       机械能守恒 \(T+V\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      不同坐标系视角下的牛顿定律形式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="不同坐标系视角下的牛顿定律形式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      直角坐标系
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      平面极坐标系
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      柱坐标系
     </span>
   </a>
   
@@ -1002,6 +1046,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      不同坐标系视角下的牛顿定律形式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="不同坐标系视角下的牛顿定律形式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      直角坐标系
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      平面极坐标系
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      柱坐标系
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1163,6 +1249,117 @@ T=\frac 1 2 m{\mathbf{v}}^2
 <div class="arithmatex">\[
 \Rightarrow {\rm d}(T+V)=0
 \]</div>
+<h2 id="_8">不同坐标系视角下的牛顿定律形式<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<details class="思路">
+<summary>思路</summary>
+<p>写出基底与自然基底的关系<br>
+用基底和一些基本公式表示坐标、动量、角动量、牛顿定律等物理量<br>
+从得到的式子看看能不能得出我们熟悉的结论，如：角动量守恒</p>
+</details>
+<h4 id="_9">直角坐标系<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+\mathbf{r}=x_k\hat{e_k}
+\]</div>
+<div class="arithmatex">\[
+\dot{\hat{e_k}}=0
+\]</div>
+<div class="arithmatex">\[
+\mathbf{p}=m\dot{x_k}\hat{e_k}
+\]</div>
+<div class="arithmatex">\[
+\mathbf{J}=\mathbf{r}\times\mathbf{p}=\epsilon_{ijk}x_ip_j\hat{e_k}
+\]</div>
+<div class="arithmatex">\[
+m\ddot{\mathbf{r}}=\mathbf{F}\Rightarrow m\ddot{\mathbf{x_i}}=F_i
+\]</div>
+<h4 id="_10">平面极坐标系<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+\hat{e_r}=\cos \theta\hat{e_1}+\sin \theta\hat{e_2}\Rightarrow \dot{\hat{e_r}}=\dot{\theta}\hat{e_{\theta}}
+\]</div>
+<div class="arithmatex">\[
+\hat{e_{\theta}}=-\sin \theta \hat{e_1}+\cos \theta\hat{e_2}
+\Rightarrow \dot{\hat{e_{\theta}}}-\dot{\theta}\hat{e_r}
+\]</div>
+<div class="arithmatex">\[
+\mathbf{r} = r \hat{e}_r\Rightarrow \dot{\mathbf{r}}=\dot{r} \hat{e}_r + r \dot{\theta} \hat{e}_\theta
+\]</div>
+<div class="arithmatex">\[
+\Rightarrow\ddot{\mathbf{r}}=(\ddot{r} - r \dot{\theta}^2) \hat{e}_r + (r \ddot{\theta} + 2 \dot{r} \dot{\theta}) \hat{e}_\theta
+\]</div>
+<div class="arithmatex">\[
+\mathbf{p} = m \dot{\mathbf{r}}\Rightarrow\mathbf{p} = m \dot{r} \hat{e}_r + m r \dot{\theta} \hat{e}_\theta
+\]</div>
+<div class="arithmatex">\[
+\mathbf{J} = m r^2 \dot{\theta}\hat{e_z}
+\]</div>
+<div class="arithmatex">\[
+T=\frac{{\mathbf{p}}^2}{2m}=\frac{1}{2} m (\dot{r}^2 + r^2 \dot{\theta}^2)
+\]</div>
+<div class="arithmatex">\[
+m\ddot{\mathbf{r}}=\mathbf{F}\Rightarrow {F_r}=m(\ddot{r} - r \dot{\theta}^2)\,,\,{F_{\theta}}=m(r \ddot{\theta} + 2 \dot{r} \dot{\theta})
+\]</div>
+<details>
+<summary>推论：角动量守恒定律</summary>
+<div class="arithmatex">\[
+\frac 1 r\cdot\frac{\rm d}{{\rm d}t}(mr^2\dot{\theta})={F_{\theta}}\overset{结合\mathbf{J}}\Rightarrow\dot{\mathbf{J}}=F_{\theta}r\hat{e_z}
+\]</div>
+</details>
+<h4 id="_11">柱坐标系<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<p>在平面极坐标系的基础上加一个垂直于平面的坐标轴</p>
+<div class="arithmatex">\[
+\mathbf{r} = r \hat{e}_r + z \hat{e}_z
+\]</div>
+<div class="arithmatex">\[
+\Rightarrow \dot{\mathbf{r}} = \dot{r} \hat{e}_r + r\dot{\theta} \hat{e}_\theta + \dot{z} \hat{e}_z
+\]</div>
+<div class="arithmatex">\[
+\Rightarrow \ddot{\mathbf{r}} =(\ddot{r} - r\dot{\theta}^2) \hat{e}_r + (r\ddot{\theta} + 2\dot{r} \dot{\theta}) \hat{e}_\theta+ \ddot{z} \hat{e}_z
+\]</div>
+<div class="arithmatex">\[
+\mathbf{p} = m \mathbf{v} = m (\dot{r} \hat{e}_r + r\dot{\theta} \hat{e}_\theta + \dot{z} \hat{e}_z)
+\]</div>
+<div class="arithmatex">\[
+\mathbf{J} = m r^2 \dot{\theta} \hat{e}_z + m (z \dot{r} - r \dot{z}) \hat{e}_\theta - m z r \dot{\theta} \hat{e}_r
+\]</div>
+<div class="arithmatex">\[
+T = \frac{1}{2} m v^2 = \frac{1}{2} m (\dot{r}^2 + r^2\dot{\theta}^2 + \dot{z}^2)
+\]</div>
+<p>球坐标系
+$$
+\hat{e}_r = \sin\theta \cos\phi \hat{e}_x + \sin\theta \sin\phi \hat{e}_y + \cos\theta \hat{e}_z
+$$</p>
+<div class="arithmatex">\[
+\hat{e}_\theta = \cos\theta \cos\phi \hat{e}_x + \cos\theta \sin\phi \hat{e}_y - \sin\theta \hat{e}_z
+\]</div>
+<div class="arithmatex">\[
+\hat{e}_\phi = -\sin\phi \hat{e}_x + \cos\phi \hat{e}_y
+\]</div>
+<details class="反向转换">
+<summary>反向转换</summary>
+<div class="arithmatex">\[
+\hat{e}_x = \sin\theta \cos\phi \hat{e}_r + \cos\theta \cos\phi \hat{e}_\theta - \sin\phi \hat{e}_\phi
+\]</div>
+<div class="arithmatex">\[
+\hat{e}_y = \sin\theta \sin\phi \hat{e}_r + \cos\theta \sin\phi \hat{e}_\theta + \cos\phi \hat{e}_\phi
+\]</div>
+<div class="arithmatex">\[
+\hat{e}_z = \cos\theta \hat{e}_r - \sin\theta \hat{e}_\theta
+\]</div>
+</details>
+<p>基矢随时间的变化<br>
+$$
+\dot{\hat{e}<em>r} = \dot{\theta} \hat{e}</em>\theta + \dot{\phi} \sin\theta \hat{e}_\phi
+$$</p>
+<div class="arithmatex">\[
+\dot{\hat{e}_\theta} = -\dot{\theta} \hat{e}_r + \dot{\phi} \cos\theta \hat{e}_\phi
+\]</div>
+<div class="arithmatex">\[
+\dot{\hat{e}_\phi} = -\dot{\phi} \hat{e}_r - \dot{\theta} \cos\theta \hat{e}_\theta(好像有点问题)
+\]</div>
+<details class="推导">
+<summary>推导</summary>
+<p>d d</p>
+</details>
 
 
 
