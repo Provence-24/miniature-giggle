@@ -700,6 +700,57 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      关系模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="关系模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本元素
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      结构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      简单的SQL语言
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -928,6 +979,8 @@
       
         
       
+        
+      
     
     
       
@@ -1104,6 +1157,57 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      关系模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="关系模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本元素
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      结构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      简单的SQL语言
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1171,6 +1275,38 @@ Normalization Theory（规范化理论）<br>
 <p>想方法来克服存储器速度差异鸿沟<br>
 对于大数据，建立高效索引</p>
 <p><font color=red>细节有待补充！！！！</font></p>
+<h2 id="_2">关系模型<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h4 id="_3">基本元素<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<p>关系模型以表格呈现，表格中的顺序不重要<br>
+属性：attribute<br>
+attribute value有一个值域，有空值。且具有原子性<br>
+set，但一般用multiset 因为去重比较耗时</p>
+<h4 id="_4">结构<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<p>superkey K 足够唯一确定一个元组<br>
+candidate key 满足上述且K最小<br>
+在candidate key中选择一个作为primary key<br>
+（选择依据：由实际应用决定、影响存储方式）<br>
+Foreign key 外键 是另外一个表中真是存在的<font color=red>主键</font>或本身指向空</p>
+<details class="结构的表示方法">
+<summary>结构的表示方法</summary>
+<p>1.列表表示
+<center> <a class="glightbox" href="../Database%20Schema%E5%88%97%E8%A1%A8%E8%A1%A8%E7%A4%BA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Database Schema列表表示" src="../Database%20Schema%E5%88%97%E8%A1%A8%E8%A1%A8%E7%A4%BA.png" /></a> </center>
+2.scheme diagram
+center&gt; <a class="glightbox" href="../Database%20Schema%20diagram%E8%A1%A8%E7%A4%BA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Database Schema diagram表示" src="../Database%20Schema%20diagram%E8%A1%A8%E7%A4%BA.png" /></a> </center></p>
+</details>
+<h4 id="_5">操作<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p>relational algebra 关系代数<br>
+六种基本操作<br></p>
+<details class="问题">
+<summary>问题</summary>
+<p>无法直接体现：1.统计功能 2.递归不太行</p>
+</details>
+<p>附加操作：natural join,theta join,outer join,div等<br>
+<font color=red>不是那么好记，需要反复巩固</font><br></p>
+<p>聚合式的操作：avg,min,max,sum,count<br>
+聚合函数：分组<br> 注：跟高中python的pandas很像<br></p>
+<h4 id="sql">简单的SQL语言<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h4>
+<p><center> <a class="glightbox" href="../SQL%E8%AF%AD%E8%A8%80.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SQL语言" src="../SQL%E8%AF%AD%E8%A8%80.png" /></a> </center></p>
 
 
 
