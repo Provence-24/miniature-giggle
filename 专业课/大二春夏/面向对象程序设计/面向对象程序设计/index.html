@@ -695,6 +695,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++操作案例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C++操作案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#newdelete" class="md-nav__link">
+    <span class="md-ellipsis">
+      new和delete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      reference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const" class="md-nav__link">
+    <span class="md-ellipsis">
+      const
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1052,6 +1094,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++操作案例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C++操作案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#newdelete" class="md-nav__link">
+    <span class="md-ellipsis">
+      new和delete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      reference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const" class="md-nav__link">
+    <span class="md-ellipsis">
+      const
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1096,6 +1180,21 @@ C++是面向对象和C语言的结合</p>
 全局变量<br>
 局部变量：栈<br>
 动态分配：堆</p>
+<h2 id="c">C++操作案例<a class="headerlink" href="#c" title="Permanent link">&para;</a></h2>
+<h4 id="newdelete">new和delete<a class="headerlink" href="#newdelete" title="Permanent link">&para;</a></h4>
+<p><code>int* psome=new int[10];</code><br>
+<code>delete [] psome;</code></p>
+<h4 id="reference">reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h4>
+<p><code>char &amp;r=c;</code><br>
+局部变量、全局变量定义时就得写清楚<br>
+参数不用直接赋值<br>
+不可改变，不然容易造成含义不明<br>
+<code>int &amp;*p #illegal for pointer to reference</code><br>
+<code>void(int* &amp;p) #reference to pointer is okay</code><br>
+作用：可以降低调用开销<br></p>
+<h4 id="const">const<a class="headerlink" href="#const" title="Permanent link">&para;</a></h4>
+<p><code>const int z = y;</code><br>
+储存时尽量不用内存，而直接以table的形式呈现</p>
 
 
 

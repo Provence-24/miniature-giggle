@@ -1056,7 +1056,29 @@
   <h1>L2</h1>
 
 <h2 id="_1">为什么会引入复数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>这是课后我思考很久的一个问题<br>
+得到的确切的结论是：从两个相差特定相位的偏振态出发，用复数表示后，可以保留关键的两个信息：1.振幅 2.相位差。进而得到偏振态用狄拉克符号的写法。至于为什么严格成立，不是很清楚。</p>
 <h2 id="_2">狄拉克符号下的投影及拓展<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[
+|\alpha\rangle=\sum_i a_i|i\rangle
+\]</div>
+<p>若<span class="arithmatex">\(|i\rangle\)</span>为一组规范正交基，则：</p>
+<div class="arithmatex">\[
+\langle i|\alpha\rangle=\sum_j a_j\langle i|j\rangle=a_i
+\]</div>
+<div class="arithmatex">\[
+\begin{align*}
+\Rightarrow |\alpha\rangle&amp;=\sum_i \langle i|\alpha\rangle |i\rangle\\
+&amp;=\sum_i |i\rangle \langle i|\alpha\rangle\\
+\end{align*}
+\]</div>
+<p>结论：
+$$
+I=\sum_i |i\rangle \langle i|
+$$</p>
+<div class="arithmatex">\[
+P_i=|i\rangle\langle i|
+\]</div>
 <h2 id="bb84">BB84量子密钥分发协议<a class="headerlink" href="#bb84" title="Permanent link">&para;</a></h2>
 <p><center> <a class="glightbox" href="../%E9%87%8F%E5%AD%90%E5%8A%A0%E5%AF%86%E5%8D%8F%E8%AE%AEbb84.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="量子加密协议bb84" src="../%E9%87%8F%E5%AD%90%E5%8A%A0%E5%AF%86%E5%8D%8F%E8%AE%AEbb84.png" /></a> </center></p>
 <h4 id="_3">目标<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>

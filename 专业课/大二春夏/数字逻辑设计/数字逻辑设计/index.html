@@ -708,6 +708,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      逻辑计算与布尔代数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="逻辑计算与布尔代数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binary-logic-and-gates" class="md-nav__link">
+    <span class="md-ellipsis">
+      binary logic and gates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      布尔表达式恒等式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1034,6 +1067,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      逻辑计算与布尔代数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="逻辑计算与布尔代数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binary-logic-and-gates" class="md-nav__link">
+    <span class="md-ellipsis">
+      binary logic and gates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      布尔表达式恒等式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1080,7 +1146,66 @@
 <p>格雷码<br>
 BCD码<br>
 独热码（冗余的作用）<br>
-编码和进制转换的区别<br></p>
+编码和进制转换的区别<br>
+UTF-8 兼容ASCII，可同时支持1-4位，所以要在编码上花功夫</p>
+<div class="admonition example">
+<p class="admonition-title">BCD码补6的两条规则</p>
+<p>1.大于9要补6（找到正确的BCD码）<br>
+2.进位时，低位要补6</p>
+</div>
+<h2 id="_5">逻辑计算与布尔代数<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>思路：binary logic and gates<span class="arithmatex">\(\Rightarrow\)</span>布尔代数<span class="arithmatex">\(\Rightarrow\)</span>标准化</p>
+<h4 id="binary-logic-and-gates">binary logic and gates<a class="headerlink" href="#binary-logic-and-gates" title="Permanent link">&para;</a></h4>
+<p>存在gate delay<br>
+与非门是通用门：与门是由与非门跟非门组合而成的（设计工艺角度）<br>
+逻辑门的符号<br></p>
+<h4 id="_6">布尔表达式恒等式<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<p>对偶规则
+$$
+H=AB+AC+BC
+$$</p>
+<div class="arithmatex">\[
+dual H=(A+B)(A+C)(B+C)
+\]</div>
+<p>实例
+$$
+X+YZ=(X+Y)(X+Z)
+$$</p>
+<div class="arithmatex">\[
+X(Y+Z)=XY+XZ
+\]</div>
+<details class="理解">
+<summary>理解</summary>
+<p>1.由第二个式子对偶推第一个式子<br></p>
+<p>2.第一个式子右推左：
+$$
+(X+Y)(X+Z)=X+XY+XZ+YZ=X(1+Y+Z)+YZ
+$$</p>
+<p>3.用合取析取符号
+$$
+X\wedge (Y\vee Z)=(X\wedge Y)\vee (X\wedge Z)
+$$</p>
+</details>
+<div class="arithmatex">\[
+\begin{align*}
+AB+\overline AC+BC&amp;=AB+\overline AC+(A+\overline A)BC\\
+&amp;=AB(1+C)+\overline AC(1+B)\\
+&amp;=AB+\overline AC
+\end{align*}
+\,
+\]</div>
+<div class="arithmatex">\[
+\begin{align*}
+\overline X \overline YZ+X\overline Y&amp;=\overline Y(\overline XZ+X)\\
+&amp;=\overline Y(X+\overline X)(X+Z)\\
+&amp;=\overline Y(X+Z)
+\end{align*}
+\]</div>
+<p>替换规则
+$$
+xf(x,\overline x,y,z,\dots) \overset{替换} \rightarrow 
+xf(1,0,y,z,\dots)
+$$</p>
 
 
 
