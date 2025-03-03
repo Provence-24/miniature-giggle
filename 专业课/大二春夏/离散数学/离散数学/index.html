@@ -1081,6 +1081,22 @@ $$
 <h4 id="_3">逻辑没怎么听，跟数逻很像<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <p><center> <a class="glightbox" href="../%E8%A1%A8%E7%A4%BA%E9%80%BB%E8%BE%91%E4%BB%A3%E6%95%B0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="表示逻辑代数" src="../%E8%A1%A8%E7%A4%BA%E9%80%BB%E8%BE%91%E4%BB%A3%E6%95%B0.png" /></a> </center>
 新概念：表达式<span class="arithmatex">\(\,p\rightarrow q\)</span>成立条件，并判断是否为重言式</p>
+<p>!!! example 3.3 课后作业反馈</p>
+<div class="highlight"><pre><span></span><code>$证明：[(p\wedge q)\vee (p\rightarrow r)\wedge (q\rightarrow r)]\rightarrow r永真$
+
+$$
+\begin{align*}
+原式&amp;=(\neg p\wedge\neg q)\vee(p\wedge\neg r)\vee(q\wedge \neg r)\vee r\\
+&amp;=(\neg p\wedge \neg q)\vee (p\wedge \neg r)\vee (r\vee q) \\
+&amp;=((\neg p\wedge\neg q)\vee q)\vee ((p\wedge\neg r)\vee r)\\
+&amp;=(\neg p\vee q)\wedge(\neg q\vee q)\vee(p\vee r)\wedge (\neg r\vee r) \\
+&amp;= \neg p\vee q\vee p\vee r\\
+&amp;=(\neg p\vee p)\vee q\vee r\\
+&amp;=T
+\end{align*}
+$$
+思路：从并的单个变量出发，去不断“点火”，把前面括号中的$\wedge$不断变为$\vee$和另一项永真，可参考前面过程
+</code></pre></div>
 
 
 
