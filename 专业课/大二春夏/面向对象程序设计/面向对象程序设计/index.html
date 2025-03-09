@@ -732,8 +732,26 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pointers-and-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pointers and const
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class
+    </span>
+  </a>
   
 </li>
       
@@ -1133,8 +1151,26 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pointers-and-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pointers and const
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class
+    </span>
+  </a>
   
 </li>
       
@@ -1197,6 +1233,35 @@ C++是面向对象和C语言的结合</p>
 <h4 id="const">const<a class="headerlink" href="#const" title="Permanent link">&para;</a></h4>
 <p><code>const int z = y;</code><br>
 储存时尽量不用内存，而直接以table的形式呈现</p>
+<p>run_time constants<br>
+静态数组不可以用run_time constants定义长度</p>
+<p><code>cin&gt;&gt;x;</code><br>
+<code>const int size = x;</code><br>
+<code>double classA[size]; //error</code><br></p>
+<p>const for aggregates<br>
+也不可以用其来定义静态数组的长度，但是原因与上述不同。原因是虽然初始化时有确定的值，但是这些值在内存中。有些编译器只知道定义了一个常量数组，但是并不关心数组中具体的数值。</p>
+<h4 id="pointers-and-const">Pointers and const<a class="headerlink" href="#pointers-and-const" title="Permanent link">&para;</a></h4>
+<p><code>char *const q = "abc" //指针不能改，指向的内容可以改;</code><br></p>
+<p><code>const char*p = "ABCD"; //指针指向的内容不能改，指针可以改</code><br>
+注意：修改指针后，新指向的内容也不能改</p>
+<details class="实际方法">
+<summary>实际方法</summary>
+<p>*在const前，指针是常量</p>
+</details>
+<p><code>char *s = "Hello,world"; //最好不要修改s指向的内容</code>
+可以采用 <code>char s[] = "Hello,world";</code><br></p>
+<p>conversions:<br>
+不用explicit cast时，不能把常量对象转换为非常量<br></p>
+<p>函数调用：<br>
+pass by const value（有效）<br>
+return by const value（没啥用）<br>
+pass and return by reference（比较高效，不用花费很多内存；又可以不像指针那样让用户去修改内容）<br></p>
+<h2 id="class">Class<a class="headerlink" href="#class" title="Permanent link">&para;</a></h2>
+<p>这节课还没有详细展开，只听了一个总体思想<br>
+objects = attributes + service;<br>
+:: resolver <br>
+Class name:: function name</p>
+<p>Stash?? 这个还不知道在讲什么</p>
 
 
 

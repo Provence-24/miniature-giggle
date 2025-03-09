@@ -736,6 +736,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      表达式的范式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1097,6 +1115,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      表达式的范式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1150,11 +1186,11 @@ BCD码<br>
 独热码（冗余的作用）<br>
 编码和进制转换的区别<br>
 UTF-8 兼容ASCII，可同时支持1-4位，所以要在编码上花功夫</p>
-<div class="admonition example">
-<p class="admonition-title">BCD码补6的两条规则</p>
+<details>
+<summary>BCD码补6的两条规则</summary>
 <p>1.大于9要补6（找到正确的BCD码）<br>
 2.进位时，低位要补6</p>
-</div>
+</details>
 <h2 id="_5">逻辑计算与布尔代数<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>思路：binary logic and gates<span class="arithmatex">\(\Rightarrow\)</span>布尔代数<span class="arithmatex">\(\Rightarrow\)</span>标准化</p>
 <h4 id="binary-logic-and-gates">binary logic and gates<a class="headerlink" href="#binary-logic-and-gates" title="Permanent link">&para;</a></h4>
@@ -1208,6 +1244,47 @@ $$
 xf(x,\overline x,y,z,\dots) \overset{替换} \rightarrow 
 xf(1,0,y,z,\dots)
 $$</p>
+<h4 id="_7">表达式的范式<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p>sum of minterms (SOM)<br></p>
+<div class="arithmatex">\[
+\begin{align*}
+f&amp;=x+\overline x\,\overline y\\
+&amp;=x(\overline y+y)+\overline x\,\overline y\\
+&amp;=xy+x\overline y+\overline x\,\overline y\\
+&amp;=m_3+m_2+m_0
+\end{align*}
+\]</div>
+<p>product of maxterms (POM)<br></p>
+<div class="arithmatex">\[
+\begin{align*}
+f(x,y,z)&amp;=x+\overline x\,\overline y\\
+&amp;=(x+\overline x)(x+\overline y)\\
+&amp;=x+\overline y\\
+&amp;=x+\overline y+z\cdot \overline z\\
+&amp;=(x+\overline y+z)(x+\overline y+\overline z)
+\end{align*}
+\]</div>
+<p>函数求反：
+$$
+F(x,y,z)=\sum_m(1,3,5,7)
+$$</p>
+<div class="arithmatex">\[
+\overline F(x,y,z)=\sum_m(0,2,4,6)
+\]</div>
+<div class="arithmatex">\[
+\overline F(x,y,z)=\prod_m(1,3,5,7)
+\]</div>
+<h4 id="_8">优化<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p>先定优化目标，标准：<span class="arithmatex">\(L\text{、}G\text{、}GN\)</span><br>
+注意：G中一个变量不要重复算，只算1；GN中要看distinct的门上的nots数<br>
+优化方法：用卡诺图（练的很多了）<br>
+用BCD码时会涉及到 don't care项<br></p>
+<div class="admonition example">
+<p class="admonition-title">作业反馈</p>
+<p>2-3.C不会做<br>
+product-of-sums要不要最简<br>
+prime和essential可以把表达式写出来<br></p>
+</div>
 
 
 
