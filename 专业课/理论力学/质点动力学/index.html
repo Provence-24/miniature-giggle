@@ -891,6 +891,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      有心力场中的散射问题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="有心力场中的散射问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step1sigmasimomega" class="md-nav__link">
+    <span class="md-ellipsis">
+      step1:\(\,\sigma\sim\Omega\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step2" class="md-nav__link">
+    <span class="md-ellipsis">
+      step2:利用龙格楞次守恒量解决问题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      最速落径问题和变分法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1286,6 +1328,48 @@
   <a href="#_20" class="md-nav__link">
     <span class="md-ellipsis">
       龙格楞次矢量
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      有心力场中的散射问题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="有心力场中的散射问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step1sigmasimomega" class="md-nav__link">
+    <span class="md-ellipsis">
+      step1:\(\,\sigma\sim\Omega\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step2" class="md-nav__link">
+    <span class="md-ellipsis">
+      step2:利用龙格楞次守恒量解决问题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      最速落径问题和变分法
     </span>
   </a>
   
@@ -1807,6 +1891,101 @@ $$
 &amp;E=0\,,\,e=1\,,\,抛物线\\
 &amp;E&gt;0\,,\,e&gt;1\,,\,双曲线\\
 \end{align*}
+\]</div>
+<h2 id="_21">有心力场中的散射问题<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
+<p><center> <a class="glightbox" href="../%E5%8D%A2%E7%91%9F%E7%A6%8F%E6%95%A3%E5%B0%84%E9%97%AE%E9%A2%98.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="卢瑟福散射问题" src="../%E5%8D%A2%E7%91%9F%E7%A6%8F%E6%95%A3%E5%B0%84%E9%97%AE%E9%A2%98.png" /></a> </center></p>
+<h4 id="step1sigmasimomega">step1:<span class="arithmatex">\(\,\sigma\sim\Omega\)</span><a class="headerlink" href="#step1sigmasimomega" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+{\rm d}\sigma=2\pi b{\rm d}b=2\pi b\frac{{\rm d}b}{{\rm d}\theta}{\rm d}\theta
+\]</div>
+<p>由立体角的知识：</p>
+<div class="arithmatex">\[
+{\rm d}\Omega=\frac{{\rm d}S}{r^2}=\frac{2\pi r\sin\theta\cdot r{\rm d}\theta}{r^2}=2\pi\sin\theta{\rm d}\theta
+\]</div>
+<div class="arithmatex">\[
+\Rightarrow {\rm d}\sigma=b|\frac{{\rm d}b}{{\rm d}\theta}|\frac{{\rm d}\Omega}{\sin\theta}
+\]</div>
+<h4 id="step2">step2:利用龙格楞次守恒量解决问题<a class="headerlink" href="#step2" title="Permanent link">&para;</a></h4>
+<p>对于排斥力，龙格楞次矢量为：</p>
+<div class="arithmatex">\[
+\mathbf{R}=\mathbf{p}\times\mathbf{J}+m\alpha \hat{\mathbf{r}}
+\]</div>
+<p>初始状态的动量和角动量：</p>
+<div class="arithmatex">\[
+\mathbf{p}=mv_{\infty}\mathbf{e_i}
+\]</div>
+<p>$$
+\mathbf{J}=mv_{\infty}b\mathbf{e_k}
+$$
+其中，<span class="arithmatex">\(\mathbf{e_k}\,\)</span>表示垂直于平面向内的单位矢量</p>
+<p>初末状态的龙格楞次矢量：</p>
+<div class="arithmatex">\[
+\mathbf{R_i}=m^2{v_{\infty}}^2b\mathbf{n_i}-m\alpha\mathbf{e_i}
+\]</div>
+<div class="arithmatex">\[
+\mathbf{R_f}=m^2{v_{\infty}}^2b\mathbf{n_f}+m\alpha\mathbf{e_f}
+\]</div>
+<p>由于龙格楞次矢量是守恒量，有：</p>
+<div class="arithmatex">\[
+\mathbf{R_i}=\mathbf{R_j}
+\]</div>
+<details class="思想">
+<summary>思想</summary>
+<p>两边点乘<span class="arithmatex">\(\,mathbf{e_i}\)</span></p>
+</details>
+<div class="arithmatex">\[
+\Rightarrow b^2 = \frac{\alpha^2}{m^2v_{\infty}^4}\cot^2\frac{\theta}{2}
+\]</div>
+<p>整理可得：</p>
+<div class="arithmatex">\[
+{\rm d}\sigma=(\frac{\alpha}{2mv_{\infty}^2})^2\frac{{\rm d}\Omega}{\sin^4\frac{\theta}{2}}
+\]</div>
+<h4 id="_22">最速落径问题和变分法<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h4>
+<p>变分性质：<br>
+1.</p>
+<div class="arithmatex">\[
+    \delta(af+bg)=a\delta f+b\delta g
+\]</div>
+<div class="arithmatex">\[
+    \delta(fg)=f\delta g+g\delta f
+    \]</div>
+<div class="arithmatex">\[
+    \delta(\frac{f}{g})=\frac{g\delta f-f\delta g}{g^2}
+    \]</div>
+<div class="arithmatex">\[
+    \delta x = 0
+    \]</div>
+<p>2.</p>
+<div class="arithmatex">\[
+    [\delta, {\rm d}]=0
+\]</div>
+<details class="推导">
+<summary>推导</summary>
+<div class="arithmatex">\[
+\begin{align*}
+\delta y(x+{\rm d}x)&amp;=(\delta y)(x+{\rm d}x)
+&amp;=(y_2-y_1)(x+{\rm d}x)\\
+&amp;=y_2(x+{\rm d}x)-y_1(x+{\rm d}x)\\
+&amp;=y_2(x)+{\rm d}(y_2(x))-y_1(x)-{\rm d}(y_1(x))\\
+&amp;=(y_2(x)-y_1(x))+{\rm d}(y_2(x)-y_1(x))\\
+&amp;=\delta y (x)+{\rm d}\delta y(x)
+\end{align*}
+\]</div>
+<div class="arithmatex">\[
+\begin{align*}
+\delta y(x+{\rm d}x)&amp;=\delta(y(x+{\rm d}x))\\
+&amp;=\delta(y(x)+{\rm d}y(x))\\
+&amp;=\delta y(x)+\delta{\rm d} y(x)
+\end{align*}
+\]</div>
+<p>根据两个式子的最后一项，联立可得：<span class="arithmatex">\(\,[\delta,{\rm d}]=0\)</span></p>
+</details>
+<p>根据变分算符和微分算符的可对易性：</p>
+<div class="arithmatex">\[
+\delta({\rm d}x)={\rm d}\delta x=0
+\]</div>
+<div class="arithmatex">\[
+\delta(\frac{\rm d}{{\rm d}x})y=\delta(\frac{{\rm d}y}{{\rm d}x})=\frac{\delta{\rm d}y\cdot{\rm d}x-{\rm d}y\cdot\delta{\rm d}x}{({\rm d}x)^2}=\frac{\rm d}{{\rm d}x}(\delta y)
 \]</div>
 
 
