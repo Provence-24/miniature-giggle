@@ -755,6 +755,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译器
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1174,6 +1183,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译器
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1258,10 +1276,32 @@ return by const value（没啥用）<br>
 pass and return by reference（比较高效，不用花费很多内存；又可以不像指针那样让用户去修改内容）<br></p>
 <h2 id="class">Class<a class="headerlink" href="#class" title="Permanent link">&para;</a></h2>
 <p>这节课还没有详细展开，只听了一个总体思想<br>
+面向对象的优势：有时确实存在一个真是的对象，如：售货机<br>
 objects = attributes + service;<br>
 :: resolver <br>
 Class name:: function name</p>
-<p>Stash?? 这个还不知道在讲什么</p>
+<div class="admonition example">
+<p class="admonition-title">Stash.h</p>
+<p>第一次知道是自己可以写个头文件</p>
+</div>
+<p>class缺省为private<br>
+函数中可以用this<br></p>
+<details class="原理">
+<summary>原理</summary>
+<p><code>a.init(10);</code>
+<code>Stash::init(&amp;a, 10);</code></p>
+</details>
+<h2 id="_6">编译器<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>headers are interface<br></p>
+<p>头文件重复的解决方案：<br>
+<code>#ifndef HEADER_FLAG</code><br>
+<code>#define HEADER_FLAG</code><br>
+<span class="arithmatex">\(\cdots\)</span><br>
+<code>#ednif</code><br>
+或<br>
+<code>#pragma once#</code><br></p>
+<p>The makefile utility<br>
+<center> <a class="glightbox" href="../makefile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="makefile" src="../makefile.png" /></a> </center></p>
 
 
 
