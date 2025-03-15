@@ -774,7 +774,7 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      原子命题模式
+      原子命题模式（命题演算）
     </span>
   </a>
   
@@ -791,6 +791,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      集合
+    </span>
+  </a>
   
 </li>
       
@@ -1097,7 +1106,7 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      原子命题模式
+      原子命题模式（命题演算）
     </span>
   </a>
   
@@ -1114,6 +1123,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      集合
+    </span>
+  </a>
   
 </li>
       
@@ -1164,16 +1182,37 @@ $$
 <p>思路：从并的单个变量出发，去不断“点火”，把前面括号中的<span class="arithmatex">\(\wedge\)</span>不断变为<span class="arithmatex">\(\vee\)</span>和另一项永真，可参考前面过程</p>
 </div>
 <h2 id="_4">逻辑中两套思考模式<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h4 id="_5">原子命题模式<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<h4 id="_5">原子命题模式（命题演算）<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <div class="arithmatex">\[
-原子命题\overset{关系符号}{\rightarrow}命题公式\overset{重言式}\rightarrow 可利用的公式
+原子命题\overset{关系符号}{\rightarrow}命题公式\overset{公式的等价性}\rightarrow 可利用的公式
 \]</div>
-<p>数逻中类似的范式<br></p>
-<p>引理、推论、猜想</p>
+<details class="重言式与等价">
+<summary>重言式与等价</summary>
+<p>等价命题之间的互推表达式 是一个 重言式</p>
+</details>
+<p>最后化为数逻中的范式<br></p>
+<p>引理、推论、猜想(命题演算证明的整体思路)</p>
 <h4 id="predicates-and-quantities">predicates and quantities<a class="headerlink" href="#predicates-and-quantities" title="Permanent link">&para;</a></h4>
 <p>谓词：描述特性，可代入判断真假<br>
 量化：所有、存在<br></p>
 <p>量化与谓词结合拆分所谓的“原子命题”</p>
+<p>量词公式的转换：</p>
+<p><center> <a class="glightbox" href="../%E7%AD%89%E4%BB%B7%E8%B0%93%E8%AF%8D%E5%85%AC%E5%BC%8F1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="等价谓词公式1" src="../%E7%AD%89%E4%BB%B7%E8%B0%93%E8%AF%8D%E5%85%AC%E5%BC%8F1.png" /></a> </center>
+<center> <a class="glightbox" href="../%E7%AD%89%E4%BB%B7%E8%B0%93%E8%AF%8D%E5%85%AC%E5%BC%8F2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="等价谓词公式2" src="../%E7%AD%89%E4%BB%B7%E8%B0%93%E8%AF%8D%E5%85%AC%E5%BC%8F2.png" /></a> </center>
+目标：转换为前述范式</p>
+<details class="理解">
+<summary>理解</summary>
+<p>A中如果包含x，但是却缺少对x的量词限定，则该式子不是一个命题，而只是一个公式。并不一定要命题之间才能用“量词公式转换”，公式之间也可以用，只是第二张图中的转换不能使用</p>
+</details>
+<h2 id="_6">集合<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>无穷之间的映射
+集合以前没见过的运算：</p>
+<div class="arithmatex">\[
+A-B=\{x|x\in A\vee x\notin B\}
+\]</div>
+<div class="arithmatex">\[
+A\oplus B=(A-B)\cup(B-A)
+\]</div>
 
 
 
